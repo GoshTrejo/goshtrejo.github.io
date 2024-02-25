@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="cont1">
+            <h2 class="title">IP GEOLOCATION</h2>
+            <p class="description">
+                La geolocalización de IP es el mapeo de una dirección IP a la ubicación geográfica real del dispositivo conectado a
+                Internet123. Esta geolocalización proporciona información como el país, la región (ciudad), la latitud/longitud, el ISP,
+                el nombre de dominio, entre otras cosas útiles123.
+                La geolocalización de IP puede revelar tu ubicación geográfica, pero no tu ubicación precisa como lo hace una dirección
+                de casa4. Las direcciones IP pueden revelar la ciudad, el código postal, o el código de área desde donde te estás
+                conectando a Internet en ese momento.
+                <br/>
+                Es importante tener en cuenta que la geolocalización de IP no revelará tu nombre, número de teléfono, u otra información
+                personal precisa4. En cambio, puede revelar información general sobre la ubicación desde la cual te estás conectando a
+                Internet.
+            </p>
+        </div>
+        <div class="cont2">
+            <div class="ip-container">
+                <ul>
+                    <span>Enter any IPv4</span>
+                </ul>
+                <ul>
+                    <input class="search" type="text">
+                    <button onclick="IpGeoLocation()">Search</button>
+                </ul>
+            </div>
+            <div class="info">
+                <p class="h"></p>
+                <label>IP Address: </label><span class="ipaddress">" "</span> <br/><br />
+                <label>Country Name: </label><span class="country">" "</span> <br/> <br />
+                <label>City: </label><span class="city">" "</span> <br/> <br />
+                <label>Latitude: </label><span class="latitude">" "</span> <br/> <br />
+                <label>Longitude: </label><span class="longitude">" "</span> <br/> <br />
+                <label>Internet Provider: </label><span class="int-provider">" "</span> <br/> <br />
+            </div>
+            <p class="p2"></p>
+        </div>
+        <div class="cont3"></div>
+
+    </div>
+    <script type="text/javascript" src="./geolocation.js"></script>
+</body>
+</html>
